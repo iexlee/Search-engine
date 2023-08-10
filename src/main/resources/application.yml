@@ -1,0 +1,19 @@
+web:
+  upload-path: C:\Users\PC\Desktop\code\img
+
+spring:
+  resources:
+    static-locations: file:${web.upload-path}
+  redis:
+    host: 10.112.126.171
+    port: 6379
+    database:
+      db0: 0
+      db1: 1
+    timeout: 3000
+    pool:
+      max-active: 100
+      max-idle: 3
+      min-idle: 0
+      max-wait: -1
+    password: 12345678
